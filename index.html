@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Front Office Crossword | NCHMCT First Year</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">NCHMCT • FIRST YEAR</p>
+      <h1>Hotel Front Office Crossword</h1>
+      <p class="subtitle">15 × 15 Interactive Learning Puzzle</p>
+      <p class="intro">Practise essential front-office terminology, guest services and room operations.</p>
+    </header>
+
+    <section class="toolbar" aria-label="Puzzle controls">
+      <div class="progress-wrap">
+        <div class="progress-label"><span id="progressText">0 of 15 words complete</span><span id="percentText">0%</span></div>
+        <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+      </div>
+      <div class="buttons">
+        <button id="checkBtn" class="primary">Check answers</button>
+        <button id="revealBtn">Reveal selected</button>
+        <button id="hintBtn">Hint</button>
+        <button id="resetBtn" class="subtle">Reset puzzle</button>
+      </div>
+    </section>
+
+    <section class="layout">
+      <section class="board-panel">
+        <div class="board-heading">
+          <h2>Crossword Grid</h2>
+          <p>Select a numbered clue or a square to begin. Use arrow keys to move.</p>
+        </div>
+        <div class="grid-scroll"><div id="crossword" class="crossword" role="grid" aria-label="15 by 15 crossword grid"></div></div>
+        <div id="status" class="status" role="status" aria-live="polite">Ready when you are. Fill in the answers using capital or lowercase letters.</div>
+        <div class="legend"><span><i class="legend-box filled"></i> Correct</span><span><i class="legend-box wrong"></i> Check this letter</span><span><i class="legend-box active"></i> Selected word</span></div>
+      </section>
+
+      <aside class="clues-panel">
+        <div class="clue-tabs">
+          <button class="tab active" data-tab="A">Across</button>
+          <button class="tab" data-tab="D">Down</button>
+        </div>
+        <div id="cluesA" class="clue-list"></div>
+        <div id="cluesD" class="clue-list hidden"></div>
+        <div class="study-tip">
+          <h3>Front Office Tip</h3>
+          <p>Front office teams coordinate reservations, registration, guest accounts, room information and departures. Accurate terminology supports smooth guest service.</p>
+        </div>
+      </aside>
+    </section>
+    <footer><span>Learning activity • Hotel Front Office Operations</span><span id="scoreText">Score: not checked yet</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
